@@ -7,6 +7,16 @@ body{
     font-size: 14px;
 }
 
+div.header-image{
+    height: 400px;
+    background: url('images/student-stress.jpg') no-repeat center;
+    background-size: cover;
+}
+
+nav{
+    height: 60px;
+}
+
 div.questions{
     margin-top: 60px;
     display: flex;

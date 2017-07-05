@@ -2,6 +2,10 @@ body{
     background: #474747;
 }
 
+nav{
+    background: #581746;
+}
+
 section#q1{
     background: #910b3f url('images/bell.png')no-repeat center;
     background-size: 60%;
