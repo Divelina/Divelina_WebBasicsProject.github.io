@@ -1,0 +1,101 @@
+body{
+    background: #636363;
+}
+
+section#q1{
+    background: #134c67 url('images/bell.png')no-repeat center;
+    background-size: 60%;
+}
+
+section#q2{
+    background: #7cb2cc url('images/quiz.png')no-repeat center;
+    background-size: 60%;
+}
+
+section#q3{
+    background: #db553e url('images/calendar-clock.png')no-repeat center;
+    background-size: 60%;
+
+}
+
+section#q4{
+    background: #ecca60 url('images/student-making-a-question-in-class.png')no-repeat center;
+    background-size: 60%;
+}
+
+section#q5{
+    background: #db553e url('images/open-class-door_mid.png')no-repeat center;
+    background-size: 60%;
+
+}
+
+section#q6{
+    background: #134c67 url('images/student-sleeping-in-class.png')no-repeat center;
+    background-size: 60%;
+}
+
+section.question{
+    box-sizing: border-box;
+}
+
+/*
+
+section#q1{
+    border: 20px solid #910b3f;
+    background: #e0e0e0;
+}
+
+
+section#q2{
+    border: 20px solid #c8003a;
+    background: #e0e0e0;
+}
+
+section#q3{
+    border: 20px solid #ff5634;
+    background: #fff;
+}
+
+section#q4{
+    border: 20px solid #581746;
+    background: #e0e0e0;
+}
+
+section#q5{
+    border: 20px solid #ffc301;
+    background: #e0e0e0;
+}
+
+
+section#q6{
+    border: 20px solid #910b3f;
+    background: #e0e0e0;
+}
+*/
+
+
+section#q1 label, section#q1 p, section#q1 a{
+    display: none;
+}
+
+
+section#q2 label, section#q2 p, section#q2 a{
+    display: none;
+}
+
+
+section#q3 label, section#q3 p, section#q3 a{
+    display: none;
+}
+
+section#q4 label, section#q4 p, section#q4 a{
+    display: none;
+}
+
+section#q5 label, section#q5 p, section#q5 a{
+    display: none;
+}
+
+section#q6 label, section#q6 p, section#q6 a{
+    display: none;
+}

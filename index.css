@@ -1,26 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 14px;
+}
+
 div.questions{
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 section.question{
-    width: 400px;
-    margin: 20px;
+    width: 350px;
+    height: 300px;
     padding: 20px;
-    border: 1px solid black;
-    border-radius: 20px;
 }
+
 
 label{
     display: block;
+    margin: 10px 0;
 }
 
 input[type="radio"], label > p{
     display: inline-block;
+    vertical-align: center;
 }
 
 label > p{
-    max-width: 300px;
+    max-width: 250px;
+}
+
+a.next-question{
+    display: inline-block;
+    float: right;
+}
+
+div.form-buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #test-result{
@@ -29,7 +53,6 @@ label > p{
     border-radius: 20px;
     margin: 20px;
 }
-
 
 #result{
     font-size: 30px;

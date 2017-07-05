@@ -5,6 +5,7 @@
     <title>SoftUni Student Test</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.html.js"></script>
+    <link rel="stylesheet" href="colorpallette.css">
 </head>
 <body>
 
@@ -35,7 +36,7 @@
                             <p>Тайна.</p>
                         </label>
 
-                        <a href="#q2">Към Въпрос 2</a>
+                        <a class="next-question" href="#q2">Към Въпрос 2</a>
                     </section>
 
                     <section class="question" id="q2">
@@ -61,7 +62,7 @@
                             <p>Хакнах &quot;Judge&quot;.</p>
                         </label>
 
-                        <a href="#q3">Към Въпрос 3</a>
+                        <a class="next-question" href="#q3">Към Въпрос 3</a>
                     </section>
 
 
@@ -88,7 +89,7 @@
                             <p>Внимавам да не ме забележат.</p>
                         </label>
 
-                        <a href="#q4">Към Въпрос 4</a>
+                        <a class="next-question" href="#q4">Към Въпрос 4</a>
                     </section>
 
                     <section class="question" id="q4">
@@ -114,7 +115,7 @@
                             <p>Хаквам компютрите на колегите.</p>
                         </label>
 
-                        <a href="#q5">Към Въпрос 5</a>
+                        <a class="next-question" href="#q5">Към Въпрос 5</a>
                     </section>
 
                     <section class="question" id="q5">
@@ -141,7 +142,7 @@
                             <p>Шумът е добро прикритие.</p>
                         </label>
 
-                        <a href="#q6">Към Въпрос 6</a>
+                        <a class="next-question" href="#q6">Към Въпрос 6</a>
                     </section>
 
                     <section class="question" id="q6">
@@ -167,13 +168,14 @@
                             <p>Хаквам &quot;Judge&quot;.</p>
                         </label>
 
-                        <a href="#answer">Към отговорите</a>
+                        <a class="next-question" href="#answer">Към отговорите</a>
                     </section>
 
                 </div>
-
-                <button type="reset" onclick="ActivateRadioButtons()">Изчисти отговорите</button>
-                <button id="answer" type="button" onclick="SubmitQuestions()">Покажи резултата</button>
+                <div class="form-buttons">
+                    <button type="reset" onclick="ActivateRadioButtons()">Изчисти отговорите</button>
+                    <button id="answer" type="button" onclick="SubmitQuestions()">Покажи резултата</button>
+                </div>
             </form>
 
     </div>
