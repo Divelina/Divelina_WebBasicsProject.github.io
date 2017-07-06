@@ -5,20 +5,92 @@
 
 body{
     font-size: 14px;
+    font-family: sans-serif;
 }
 
-div.header-image{
-    height: 400px;
+header{
+    height: 600px;
     background: url('images/student-stress.jpg') no-repeat center;
     background-size: cover;
+    position: relative;
 }
 
-nav{
-    height: 60px;
+/*---------Styling the navigation bar-----------------*/
+
+ul.nav{
+  display: flex;
+  flex-direction: row-reverse;
+    flex-wrap: wrap;
+
 }
+
+li{
+    line-height: 30px;
+    padding: 10px 30px;
+    list-style-type: none;
+}
+
+li a{
+    font-size: 1.5em;
+    color:#ffc301;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li a.sos{
+    color: #c8003a;
+    font-weight: bold;
+}
+
+/*---------Styling the header buttons-----------------*/
+
+div.header-buttons{
+    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+div.header-buttons h2{
+    color: #fff;
+    font-size: 2em;
+}
+
+ul.header-buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+ul.header-buttons a{
+    font-size: 0.8em;
+    padding: 5px 20px;
+    color: #ffc301;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #581746;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.sos-span{
+    display: inline-block;
+    padding: 10px 0;
+}
+
+ul.header-buttons a#sos{
+    background: #c8003a;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+/*--------Styling the sections in the test--------------*/
+
 
 div.questions{
-    margin-top: 60px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

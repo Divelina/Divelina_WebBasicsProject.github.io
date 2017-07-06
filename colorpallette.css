@@ -1,11 +1,14 @@
 body{
     background: #474747;
+    background: #333;
 }
 
+/*
 nav{
     background: #581746;
 }
 
+*/
 section#q1{
     background: #910b3f url('images/bell.png')no-repeat center;
     background-size: 60%;
@@ -29,6 +32,7 @@ section#q4{
 
 section#q5{
     background: #ffc301 url('images/open-class-door_mid.png')no-repeat center;
+
     background-size: 60%;
 
 }
