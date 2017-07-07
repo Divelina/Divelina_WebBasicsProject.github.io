@@ -1,6 +1,6 @@
+
 body{
     background: #474747;
-    background: #333;
 }
 
 /*
@@ -9,54 +9,46 @@ nav{
 }
 
 */
-section#q1{
-    background: #910b3f url('images/bell.png')no-repeat center;
-    background-size: 60%;
+
+li a.sos{
+    animation: blink 1s linear;
+    animation-iteration-count: infinite;
 }
 
-section#q2{
-    background: #c8003a url('images/quiz.png')no-repeat center;
-    background-size: 60%;
+#sos{
+    animation: blink 1s linear;
+    animation-iteration-count: infinite;
 }
 
-section#q3{
-    background: #ff5634 url('images/calendar-clock.png')no-repeat center;
-    background-size: 60%;
+@keyframes blink{
+    0%{
+        color: #c8003a;
+    }
 
+
+    50%{
+        color: #fff;
+    }
+
+    100%{
+        color: #c8003a;
+    }
 }
 
-section#q4{
-    background: #581746 url('images/student-making-a-question-in-class.png')no-repeat center;
-    background-size: 60%;
-}
 
-section#q5{
-    background: #ffc301 url('images/open-class-door_mid.png')no-repeat center;
-
-    background-size: 60%;
-
-}
-
-section#q6{
-    background: #910b3f url('images/student-sleeping-in-class.png')no-repeat center;
-    background-size: 60%;
-}
 
 section.question{
-    box-sizing: border-box;
+    position: relative;
 }
-
-/*
 
 section#q1{
     border: 20px solid #910b3f;
-    background: #e0e0e0;
+    background: #fff;
 }
-
 
 section#q2{
     border: 20px solid #c8003a;
-    background: #e0e0e0;
+    background: #fff;
 }
 
 
@@ -65,44 +57,140 @@ section#q3{
     background: #fff;
 }
 
+
 section#q4{
     border: 20px solid #581746;
-    background: #e0e0e0;
+    background: #fff;
 }
 
 section#q5{
     border: 20px solid #ffc301;
-    background: #e0e0e0;
+    background: #fff;
 }
 
 
 section#q6{
     border: 20px solid #910b3f;
-    background: #e0e0e0;
-}
-*/
-
-section#q1 label, section#q1 p, section#q1 a{
-    display: none;
+    background: #fff;
 }
 
 
-section#q2 label, section#q2 p, section#q2 a{
-    display: none;
+.cover{
+    position: absolute;
+    top:-20px;
+    left:-20px;
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-section#q3 label, section#q3 p, section#q3 a{
-    display: none;
+#cover1{
+    background: #910b3f url('images/bell.png')no-repeat center;
+    background-size: 60%;
 }
 
-section#q4 label, section#q4 p, section#q4 a{
-    display: none;
+#cover2{
+    background: #c8003a url('images/quiz.png')no-repeat center;
+    background-size: 60%;
 }
 
-section#q5 label, section#q5 p, section#q5 a{
-    display: none;
+#cover3{
+    background: #ff5634 url('images/calendar-clock.png')no-repeat center;
+    background-size: 60%;
 }
 
-section#q6 label, section#q6 p, section#q6 a{
-    display: none;
+#cover4{
+    background: #581746 url('images/student-making-a-question-in-class.png')no-repeat center;
+    background-size: 60%;
 }
+
+#cover5{
+    background: #ffc301 url('images/open-class-door_mid.png')no-repeat center;
+    background-size: 60%;
+}
+
+#cover6{
+    background: #910b3f url('images/student-sleeping-in-class.png')no-repeat center;
+    background-size: 60%;
+}
+
+@keyframes cover{
+    0%{
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 0.75;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        z-index: -1;
+    }
+}
+
+#form:target #cover1{
+    animation: cover 1.5s linear;
+    animation-fill-mode: forwards;
+}
+
+#form:target #cover2{
+    animation: cover 1.5s linear 1s;
+    animation-fill-mode: forwards;
+}
+
+#form:target #cover3{
+    animation: cover 1.5s linear 2s;
+    animation-fill-mode: forwards;
+}
+
+#form:target #cover4{
+    animation: cover 1.5s linear 3s;
+    animation-fill-mode: forwards;
+}
+
+#form:target #cover5{
+    animation: cover 1.5s linear 4s;
+    animation-fill-mode: forwards;
+}
+
+#form:target #cover6{
+    animation: cover 1s linear 5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes hide{
+    0%{
+        top: -60px;
+        z-index: -5;
+    }
+
+    25%{
+        top: -40px;
+        opacity: 0.5;
+    }
+
+    50%{
+        top: -20px;
+        opacity: 0;
+    }
+
+    100%{
+        top: 0px;
+        opacity: 0;
+    }
+}
+
+#form:target a.start{
+    animation: hide 2.5s linear ;
+    animation-fill-mode: forwards;
+}
+
+
+
+

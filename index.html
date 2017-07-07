@@ -27,7 +27,7 @@
                     <a id="softuni" href="">Кандидатствай!</a>
                 </li>
                 <li><span>Ще завърша ли СофтУни?</span>
-                   <a id="test" href="">Направи си тест!</a>
+                   <a id="test" href="#form">Направи си тест!</a>
                 </li>
                 <li><span class="sos-span">Нуждая се от спешна помощ!</span>
                     <a id="sos" href="">SOS!</a>
@@ -39,9 +39,10 @@
 
 <main>
     <div>
-            <form method="" name="test">
+            <form method="" name="test" id="form">
                 <div class="questions">
                     <section class="question" id="q1">
+                        <a class="start" href="#form">Старт</a>
                         <p>Защо се записа в СофтУни?</p>
                         <label>
                             <input type="radio" name="question1" value="a"/>
@@ -63,11 +64,11 @@
                             <input type="radio" name="question1" value="e"/>
                             <p>Тайна.</p>
                         </label>
-
-                        <a class="next-question" href="#q2">Към Въпрос 2</a>
+                        <div class="cover" id="cover1"></div>
                     </section>
 
                     <section class="question" id="q2">
+
                         <p>Как премина приемния изпит?</p>
                         <label>
                             <input type="radio" name="question2" value="a"/>
@@ -89,8 +90,7 @@
                             <input type="radio" name="question2" value="e"/>
                             <p>Хакнах &quot;Judge&quot;.</p>
                         </label>
-
-                        <a class="next-question" href="#q3">Към Въпрос 3</a>
+                        <div class="cover" id="cover2"></div>
                     </section>
 
 
@@ -116,8 +116,7 @@
                             <input type="radio" name="question3" value="e"/>
                             <p>Внимавам да не ме забележат.</p>
                         </label>
-
-                        <a class="next-question" href="#q4">Към Въпрос 4</a>
+                        <div class="cover" id="cover3"></div>
                     </section>
 
                     <section class="question" id="q4">
@@ -142,8 +141,7 @@
                             <input type="radio" name="question4" value="e"/>
                             <p>Хаквам компютрите на колегите.</p>
                         </label>
-
-                        <a class="next-question" href="#q5">Към Въпрос 5</a>
+                        <div class="cover" id="cover4"></div>
                     </section>
 
                     <section class="question" id="q5">
@@ -169,8 +167,7 @@
                             <input type="radio" name="question5" value="e"/>
                             <p>Шумът е добро прикритие.</p>
                         </label>
-
-                        <a class="next-question" href="#q6">Към Въпрос 6</a>
+                        <div class="cover" id="cover5"></div>
                     </section>
 
                     <section class="question" id="q6">
@@ -195,8 +192,7 @@
                             <input type="radio" name="question6" value="e"/>
                             <p>Хаквам &quot;Judge&quot;.</p>
                         </label>
-
-                        <a class="next-question" href="#answer">Към отговорите</a>
+                        <div class="cover" id="cover6"></div>
                     </section>
 
                 </div>

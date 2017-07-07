@@ -1,3 +1,5 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 *{
     margin: 0;
     padding: 0;
@@ -88,18 +90,33 @@ ul.header-buttons a#sos{
 
 /*--------Styling the sections in the test--------------*/
 
+a.start{
+    color: #ffc301;
+    background: #910b3f;
+    padding: 5px 10px;
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    z-index: 20;
+    font-size: 30px;
+    text-decoration: none;
+}
+
 
 div.questions{
-    margin-top: 50px;
+    margin: 0 auto;
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1200px;
 }
 
 section.question{
     width: 350px;
     height: 300px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 
@@ -120,6 +137,9 @@ label > p{
 a.next-question{
     display: inline-block;
     float: right;
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
 }
 
 div.form-buttons{
@@ -140,3 +160,6 @@ div.form-buttons{
     font-size: 30px;
     color: blue;
 }
+
+
+
