@@ -90,12 +90,17 @@ ul.header-buttons a#sos{
 
 /*--------Styling the sections in the test--------------*/
 
+
+section.question{
+    position: relative;
+}
+
 a.start{
     color: #ffc301;
     background: #910b3f;
-    padding: 5px 10px;
+    padding: 10px 20px;
     position: absolute;
-    top: -60px;
+    top: -70px;
     left: 20px;
     z-index: 20;
     font-size: 30px;
@@ -149,16 +154,50 @@ div.form-buttons{
     justify-content: center;
 }
 
-#test-result{
-    background: yellow;
-    display: inline-block;
-    border-radius: 20px;
-    margin: 20px;
+#reset, #answer{
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
 }
+
+#reset{
+    color: #910b3f;
+    background: none;
+}
+
+#reset:hover{
+    color: #ffc301;
+    border: none;
+    cursor: pointer;
+}
+
+#answer{
+    color: #ffc301;
+    background:#910b3f;
+    border: 2px solid #910b3f;
+}
+
+#answer:hover{
+    border: 2px solid #ffc301;
+    cursor: pointer;
+}
+
+#test-result{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+}
+
+
 
 #result{
     font-size: 30px;
-    color: blue;
+    color: #000;
+    text-align: center;
 }
 
 

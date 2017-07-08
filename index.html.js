@@ -70,7 +70,6 @@ function SubmitAnswer(name, index){
 
 function SelectResult(arr){
 
-    alert(`${arr}`);
     var countAns = [0, 0, 0, 0, 0];
 
     for (let i = 0; i < arr.length; i++)
@@ -113,9 +112,6 @@ function SelectResult(arr){
             maxAnswerOccurence++;
         }
     }
-
-    alert(`${maxAnswer}`);
-    alert(`${maxAnswerOccurence}`);
 
     let outputText = "";
 
@@ -172,8 +168,8 @@ function  ShowResult(text) {
     x.style.display = "block";
     x.innerHTML = text;
     let y = document.getElementById("test-result");
-    y.style.width="30%";
-    y.style.border = "1px solid black";
+    y.style.width="50%";
+    y.style.border = "20px solid #581746";
 }
 
 function ActivateRadioButtons() {
