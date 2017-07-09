@@ -21,6 +21,10 @@ function SubmitQuestions(){
         let testResult = SelectResult(answers);
         ShowResult(testResult);
     }
+    else
+    {
+        alert(`Моля стартирайте теста и изберете отговори на всички въпроси!`);
+    }
 }
 
 
@@ -53,7 +57,6 @@ function SubmitAnswer(name, index){
     }
     else
     {
-        alert(`Моля изберете отговор на въпрос ${index}!`);
         areAllFilled = false;
     }
 
@@ -166,10 +169,14 @@ function  ShowResult(text) {
 
     let x = document.getElementById("result");
     x.style.display = "block";
+    x.style.padding = "20px";
     x.innerHTML = text;
     let y = document.getElementById("test-result");
     y.style.width="50%";
     y.style.border = "20px solid #581746";
+    let z = document.getElementById("sos2");
+    z.style.animation ="blink 1s linear infinite";
+    window.location.hash = '#test-result';
 }
 
 function ActivateRadioButtons() {

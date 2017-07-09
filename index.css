@@ -1,4 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Kurale&subset=cyrillic');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 
 *{
     margin: 0;
@@ -6,8 +10,7 @@
 }
 
 body{
-    font-size: 14px;
-    font-family: sans-serif;
+    font: 14px 'Roboto', sans-serif;
 }
 
 header{
@@ -17,13 +20,17 @@ header{
     position: relative;
 }
 
+
+button, a{
+    font-family: 'Kurale', sans-serif;
+}
+
 /*---------Styling the navigation bar-----------------*/
 
 ul.nav{
   display: flex;
   flex-direction: row-reverse;
     flex-wrap: wrap;
-
 }
 
 li{
@@ -39,6 +46,7 @@ li a{
     text-transform: uppercase;
 }
 
+
 li a.sos{
     color: #c8003a;
     font-weight: bold;
@@ -50,37 +58,34 @@ div.header-buttons{
     margin: 0 auto;
     position: absolute;
     top: 15%;
-    left: 10%;
-}
-
-div.header-buttons h2{
-    color: #fff;
-    font-size: 2em;
-}
-
-ul.header-buttons{
+    left: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     color: #fff;
+    font-size: 1.5em;
+}
+
+div.header-buttons span{
+    color: #fff;
     font-size: 1.2em;
 }
 
+div.header-buttons .sos-span{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
 ul.header-buttons a{
-    font-size: 0.8em;
-    padding: 5px 20px;
+    font-size: 1em;
+    padding: 10px 20px;
     color: #ffc301;
-    border-radius: 5px;
     font-weight: bold;
     background: #581746;
     display: inline-block;
     letter-spacing: 0.5px;
 }
 
-.sos-span{
-    display: inline-block;
-    padding: 10px 0;
-}
 
 ul.header-buttons a#sos{
     background: #c8003a;
@@ -98,7 +103,7 @@ section.question{
 a.start{
     color: #ffc301;
     background: #910b3f;
-    padding: 10px 20px;
+    padding: 5px 20px;
     position: absolute;
     top: -70px;
     left: 20px;
@@ -118,12 +123,21 @@ div.questions{
 }
 
 section.question{
-    width: 350px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
+    max-width: calc(50vw - 40px);
     padding: 20px;
     box-sizing: border-box;
 }
 
+section.question p{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+section.question > p{
+    font-weight: bold;
+}
 
 label{
     display: block;
@@ -133,10 +147,11 @@ label{
 input[type="radio"], label > p{
     display: inline-block;
     vertical-align: center;
+    height: 18px;
 }
 
 label > p{
-    max-width: 250px;
+    max-width: 280px;
 }
 
 a.next-question{
@@ -148,17 +163,17 @@ a.next-question{
 }
 
 div.form-buttons{
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#reset, #answer{
-    padding: 10px 20px;
-    margin: 0 10px;
+#reset, #answer, #sos2{
+    max-width: 300px;
+    padding: 10px 30px;
     border: none;
-    border-radius: 5px;
+    outline: none;
     font-size: 30px;
 }
 
@@ -174,31 +189,118 @@ div.form-buttons{
 }
 
 #answer{
+    background:#581746;
     color: #ffc301;
-    background:#910b3f;
-    border: 2px solid #910b3f;
+    border: 2px solid #581746;
 }
+
 
 #answer:hover{
     border: 2px solid #ffc301;
     cursor: pointer;
 }
 
+#sos2{
+    color: #ffc301;
+    background:#910b3f;
+    border: 2px solid #910b3f;
+    text-decoration: none;
+}
+
+
+#sos2:hover{
+    text-decoration: underline #ffc301;
+}
+
 #test-result{
     display: block;
     margin: 0 auto;
-    margin-top: 30px;
-    padding: 20px;
     background: #fff;
 }
 
 
 
 #result{
-    font-size: 30px;
+    font: 30px 'Kurale', sans-serif;
     color: #000;
     text-align: center;
 }
 
+#result:first-letter{
+    font-size: 50px;
+    color: #910b3f;
+}
 
+/*---------Styling the footer-----------------*/
+
+footer{
+    height: 200px;
+    margin-top: 40px;
+    background: #581746;
+    opacity: 0.5;
+    color: #ffc301;
+}
+
+
+footer a{
+    font: 14px 'Roboto', sans-serif;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    cursor: pointer;
+}
+
+div#logos{
+    margin: 20px;
+    display: inline-block;
+    float: left;
+    letter-spacing: 0.5px;
+}
+
+
+div#logos p{
+    display: block;
+}
+
+p#mylogo{
+    font-size: 20px;
+}
+
+p#mylogo > span{
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+div#credits{
+    margin: 5px 20px 0 0 ;
+    display: inline-block;
+    float: right;
+    letter-spacing: 0.5px;
+}
+
+div#credits > p{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+div#credits ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div#credits li{
+    line-height: 10px;
+    text-align: left;
+    margin: 5px 0 0 20px;
+}
+
+div#links{
+    width: 70px;
+    height: 58px;
+    background: url("images/flatIconSet.jpg");
+    display: inline-block;
+}
 

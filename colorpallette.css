@@ -27,7 +27,7 @@ li a.sos{
 
 
     50%{
-        color: #fff;
+        color: #ffc301;
     }
 
     100%{
@@ -73,8 +73,9 @@ section#q6{
     position: absolute;
     top:-20px;
     left:-20px;
-    width: 350px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
+    max-width: calc(50vw - 40px);
     padding: 20px;
     box-sizing: border-box;
 }
@@ -184,7 +185,6 @@ section#q6{
     animation: hide 2.5s linear ;
     animation-fill-mode: forwards;
 }
-
 
 
 
