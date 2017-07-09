@@ -120,9 +120,9 @@ function SelectResult(arr){
 
     if (maxAnswerOccurence > 1)
     {
-        outputText = " Или страдате от раздвоение на личността, " +
-            "или се опитвате да ни заблудите за истинската си същност. " +
-            "“Под наблюдение” – ако може под наблюдение да е фон – нещо като печат. ";
+        outputText = " Или страдаш от раздвоение на личността, " +
+            "или се опитваш да ни заблудиш за истинската си същност. " +
+            "Поставяме те под наблюдение! ";
     }
     else
     {
@@ -172,7 +172,7 @@ function  ShowResult(text) {
     x.style.padding = "20px";
     x.innerHTML = text;
     let y = document.getElementById("test-result");
-    y.style.width="50%";
+    y.style.width="100%";
     y.style.border = "20px solid #581746";
     let z = document.getElementById("sos2");
     z.style.animation ="blink 1s linear infinite";

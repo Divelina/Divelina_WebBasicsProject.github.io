@@ -25,6 +25,7 @@ button, a{
     font-family: 'Kurale', sans-serif;
 }
 
+/*---------Styling the header-----------------*/
 /*---------Styling the navigation bar-----------------*/
 
 ul.nav{
@@ -59,11 +60,15 @@ div.header-buttons{
     position: absolute;
     top: 15%;
     left: 0;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+div.header-buttons ul{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    color: #fff;
-    font-size: 1.5em;
+    align-items: flex-end;
 }
 
 div.header-buttons span{
@@ -91,14 +96,33 @@ ul.header-buttons a#sos{
     background: #c8003a;
     font-size: 1.5em;
     margin: 10px;
+    margin-right: 0;
 }
 
+/*---------Styling the main-----------------*/
 /*--------Styling the sections in the test--------------*/
 
+form#form{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+}
 
 section.question{
     position: relative;
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
+
+/*
+max-width: calc(50vw - 40px);
+*/
 
 a.start{
     color: #ffc301;
@@ -120,14 +144,6 @@ div.questions{
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
-}
-
-section.question{
-    width: 400px;
-    height: 350px;
-    max-width: calc(50vw - 40px);
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 section.question p{
@@ -162,6 +178,8 @@ a.next-question{
     text-decoration: none;
 }
 
+/*---------Styling the form action buttons-----------------*/
+
 div.form-buttons{
     margin-top: 30px;
     display: flex;
@@ -176,6 +194,7 @@ div.form-buttons{
     outline: none;
     font-size: 30px;
 }
+
 
 #reset{
     color: #910b3f;
@@ -212,13 +231,14 @@ div.form-buttons{
     text-decoration: underline #ffc301;
 }
 
+/*---------Styling the results-----------------*/
+
 #test-result{
     display: block;
     margin: 0 auto;
+    max-width: calc(90vw - 40px);
     background: #fff;
 }
-
-
 
 #result{
     font: 30px 'Kurale', sans-serif;
@@ -238,14 +258,13 @@ footer{
     margin-top: 40px;
     background: #581746;
     opacity: 0.5;
-    color: #ffc301;
+    color: #ff5634;
 }
 
 
 footer a{
     font: 14px 'Roboto', sans-serif;
     text-transform: lowercase;
-    text-decoration: underline;
 }
 
 footer a:hover{
@@ -297,10 +316,4 @@ div#credits li{
     margin: 5px 0 0 20px;
 }
 
-div#links{
-    width: 70px;
-    height: 58px;
-    background: url("images/flatIconSet.jpg");
-    display: inline-block;
-}
 

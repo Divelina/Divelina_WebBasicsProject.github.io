@@ -75,7 +75,6 @@ section#q6{
     left:-20px;
     width: 400px;
     height: 350px;
-    max-width: calc(50vw - 40px);
     padding: 20px;
     box-sizing: border-box;
 }
