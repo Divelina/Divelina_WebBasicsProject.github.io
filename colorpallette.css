@@ -36,35 +36,35 @@ li a.sos{
 }
 
 section#q1{
-    border: 20px solid #910b3f;
+    border: 20px solid rgba(145,11,63,0.7);
     background: #fff;
 }
 
 section#q2{
-    border: 20px solid #c8003a;
+    border: 20px solid rgba(200,0,58, 0.7);
     background: #fff;
 }
 
 
 section#q3{
-    border: 20px solid #ff5634;
+    border: 20px solid rgba(255,86,52, 0.7);
     background: #fff;
 }
 
 
 section#q4{
-    border: 20px solid #581746;
+    border: 20px solid rgba(88, 23,70, 0.7);
     background: #fff;
 }
 
 section#q5{
-    border: 20px solid #ffc301;
+    border: 20px solid rgba(255,195,1, 0.7);
     background: #fff;
 }
 
 
 section#q6{
-    border: 20px solid #910b3f;
+    border: 20px solid rgba(145,11,63, 0.5);
     background: #fff;
 }
 
@@ -80,32 +80,32 @@ section#q6{
 }
 
 #cover1{
-    background: #910b3f url('images/bell.png')no-repeat center;
+    background: rgba(145,11,63,0.9) url('images/bell.png')no-repeat center;
     background-size: 60%;
 }
 
 #cover2{
-    background: #c8003a url('images/quiz.png')no-repeat center;
+    background: rgba(200,0,58, 0.9) url('images/quiz.png')no-repeat center;
     background-size: 60%;
 }
 
 #cover3{
-    background: #ff5634 url('images/calendar-clock.png')no-repeat center;
+    background: rgba(255,86,52, 0.9) url('images/calendar-clock.png')no-repeat center;
     background-size: 60%;
 }
 
 #cover4{
-    background: #581746 url('images/student-making-a-question-in-class.png')no-repeat center;
+    background: rgba(88, 23,70, 0.9) url('images/student-making-a-question-in-class.png')no-repeat center;
     background-size: 60%;
 }
 
 #cover5{
-    background: #ffc301 url('images/open-class-door_mid.png')no-repeat center;
+    background: rgba(255,195,1, 0.9) url('images/open-class-door_mid.png')no-repeat center;
     background-size: 60%;
 }
 
 #cover6{
-    background: #910b3f url('images/student-sleeping-in-class.png')no-repeat center;
+    background: rgba(145,11,63, 0.9) url('images/student-sleeping-in-class.png')no-repeat center;
     background-size: 60%;
 }
 

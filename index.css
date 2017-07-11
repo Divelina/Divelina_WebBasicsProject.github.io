@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Kurale&subset=cyrillic');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
 *{
@@ -20,18 +19,11 @@ header{
     position: relative;
 }
 
+/*---------General styling-----------------*/
+
 
 button, a{
     font-family: 'Kurale', sans-serif;
-}
-
-/*---------Styling the header-----------------*/
-/*---------Styling the navigation bar-----------------*/
-
-ul.nav{
-  display: flex;
-  flex-direction: row-reverse;
-    flex-wrap: wrap;
 }
 
 li{
@@ -47,10 +39,50 @@ li a{
     text-transform: uppercase;
 }
 
+/*---------Styling the header-----------------*/
+/*---------Styling the navigation bar-----------------*/
+
+ul.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
 
 li a.sos{
     color: #c8003a;
     font-weight: bold;
+}
+
+li.nav#tests{
+    position: relative;
+}
+
+ul#more-tests{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    z-index: 25;
+}
+
+ul#more-tests li{
+    border-bottom: 2px solid #c8003a;
+    padding: 5px 20px 5px 0;
+    text-align: right;
+}
+
+ul#more-tests li:first-of-type{
+    border-top: 2px solid #c8003a;
+}
+
+li.nav#tests:hover ul#more-tests{
+    display: block;
+    cursor: pointer;
+}
+
+ul#more-tests li a{
+    font-size: 1.2em;
 }
 
 /*---------Styling the header buttons-----------------*/

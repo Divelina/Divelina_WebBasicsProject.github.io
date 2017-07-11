@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>SoftUni Student Test</title>
-    <link rel="stylesheet" href="index.css">
     <script src="index.html.js"></script>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="colorpallette.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
@@ -17,7 +18,15 @@
         <ul class="nav">
             <li class="nav"><a class="sos" href="">SOS!</a></li>
             <li class="nav"><a href="">Мнения</a></li>
-            <li class="nav"><a href="">Тестове</a></li>
+            <li class="nav" id="tests">
+                <a href="">Тестове</a>
+                <ul id="more-tests">
+                    <li><a href="#form">Ще завършиш ли Софтуни?</a></li>
+                    <li><a href="">Ставаш ли за програмист?</a></li>
+                    <li><a href="">Отборен играч ли си?</a></li>
+                    <li><a href="">Готов ли си за интервюто?</a></li>
+                    </ul>
+            </li>
         </ul>
     </nav>
         <div class="header-buttons">
@@ -31,8 +40,6 @@
                 </li>
                 <li><span>Ще завърша ли СофтУни?</span>
                     <a id="test" href="#form">Направи си тест!</a>
-                </li>
-
                 </li>
             </ul>
         </div>
@@ -159,7 +166,7 @@
                         </label>
                         <label>
                             <input type="radio" name="question5" value="c"/>
-                            <p>Изнервят ме, но е добра тренировка е за “cubicles”.</p>
+                            <p>Изнервят ме, но е добра тренировка за “cubicles”.</p>
                         </label>
                         <label>
                             <input type="radio" name="question5" value="d"/>
@@ -176,7 +183,7 @@
                         <p>Пишеш ли си домашните?</p>
                         <label>
                             <input type="radio" name="question6" value="a"/>
-                            <p>Пишат ми ги колеги, а и асистенти.</p>
+                            <p>Пишат ми ги колегите, а и някои асистенти.</p>
                         </label>
                         <label>
                             <input type="radio" name="question6" value="b"/>
