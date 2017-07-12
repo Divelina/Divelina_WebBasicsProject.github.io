@@ -1,0 +1,171 @@
+/*---------Animation of the blinking SOS-----------------*/
+
+@keyframes blink{
+    0%{
+        color: #c8003a;
+    }
+
+
+    50%{
+        color: #ffc301;
+    }
+
+    100%{
+        color: #c8003a;
+    }
+}
+
+li a.sos{
+    animation: blink 1s linear;
+    animation-iteration-count: infinite;
+}
+
+#sos{
+    animation: blink 1s linear;
+    animation-iteration-count: infinite;
+}
+
+/*---------Colors and background images of the question sections------------*/
+
+section#q1{
+    border: 20px solid rgba(145,11,63,0.7);
+    background: #fff;
+}
+
+section#q2{
+    border: 20px solid rgba(200,0,58, 0.7);
+    background: #fff;
+}
+
+
+section#q3{
+    border: 20px solid rgba(255,86,52, 0.7);
+    background: #fff;
+}
+
+
+section#q4{
+    border: 20px solid rgba(88, 23,70, 0.7);
+    background: #fff;
+}
+
+section#q5{
+    border: 20px solid rgba(255,195,1, 0.7);
+    background: #fff;
+}
+
+
+section#q6{
+    border: 20px solid rgba(145,11,63, 0.5);
+    background: #fff;
+}
+
+
+#cover1{
+    background: rgba(145,11,63,0.9) url('images/bell.png')no-repeat center;
+    background-size: 60%;
+}
+
+#cover2{
+    background: rgba(200,0,58, 0.9) url('images/quiz.png')no-repeat center;
+    background-size: 60%;
+}
+
+#cover3{
+    background: rgba(255,86,52, 0.9) url('images/calendar-clock.png')no-repeat center;
+    background-size: 60%;
+}
+
+#cover4{
+    background: rgba(88, 23,70, 0.9) url('images/student-making-a-question-in-class.png')no-repeat center;
+    background-size: 60%;
+}
+
+#cover5{
+    background: rgba(255,195,1, 0.9) url('images/open-class-door_mid.png')no-repeat center;
+    background-size: 60%;
+}
+
+#cover6{
+    background: rgba(145,11,63, 0.9) url('images/student-sleeping-in-class.png')no-repeat center;
+    background-size: 60%;
+}
+
+
+/*---------Animating the question sections---------------*/
+
+@keyframes cover{
+    0%{
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 0.75;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        z-index: -1;
+    }
+}
+
+#form:target #cover1{
+    animation: cover 1.5s linear;
+    animation-fill-mode: forwards;
+}
+
+#form:target #cover2{
+    animation: cover 1.5s linear 1s;
+    animation-fill-mode: forwards;
+}
+
+#form:target #cover3{
+    animation: cover 1.5s linear 2s;
+    animation-fill-mode: forwards;
+}
+
+#form:target #cover4{
+    animation: cover 1.5s linear 3s;
+    animation-fill-mode: forwards;
+}
+
+#form:target #cover5{
+    animation: cover 1.5s linear 4s;
+    animation-fill-mode: forwards;
+}
+
+#form:target #cover6{
+    animation: cover 1s linear 5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes hide{
+    0%{
+        top: -60px;
+        z-index: -5;
+    }
+
+    25%{
+        top: -40px;
+        opacity: 0.5;
+    }
+
+    50%{
+        top: -20px;
+        opacity: 0;
+    }
+
+    100%{
+        top: 0px;
+        opacity: 0;
+    }
+}
+
+#form:target a.start{
+    animation: hide 2.5s linear ;
+    animation-fill-mode: forwards;
+}

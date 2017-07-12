@@ -5,8 +5,8 @@
     <title>SoftUni Student Test</title>
     <script src="index.html.js"></script>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="colorpallette.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="colorsanimations.css">
 </head>
 <body>
 
@@ -51,7 +51,9 @@
             <form method="" name="test" id="form">
                 <div class="questions">
                     <section class="question" id="q1">
-                        <a class="start" href="#form">Старт</a>
+
+                        <a class="start" href="#form" onclick="ActivateRadioButtons()">Старт</a>
+
                         <p>Защо се записа в СофтУни?</p>
                         <label>
                             <input type="radio" name="question1" value="a"/>
@@ -67,7 +69,7 @@
                         </label>
                         <label>
                             <input type="radio" name="question1" value="d"/>
-                            <p>Владея материала за всички специалности, но искам да взема сертификати.</p>
+                            <p>Владея материала, но искам да взема сертификати.</p>
                         </label>
                         <label>
                             <input type="radio" name="question1" value="e"/>
@@ -140,7 +142,7 @@
                         </label>
                         <label>
                             <input type="radio" name="question4" value="c"/>
-                            <p>Работя старателно и задавам въпроси.</p>
+                            <p>Работя и задавам въпроси.</p>
                         </label>
                         <label>
                             <input type="radio" name="question4" value="d"/>
@@ -155,18 +157,18 @@
 
                     <section class="question" id="q5">
                         <p>Как приемаш шума, телефонните разговори и игрите
-                            по време на лекции?</p>
+                            в час?</p>
                         <label>
                             <input type="radio" name="question5" value="a"/>
-                            <p>Ами не ми пречат, аз съм отвън или в кафето.</p>
+                            <p>Все ми е тая, аз съм в кафето.</p>
                         </label>
                         <label>
                             <input type="radio" name="question5" value="b"/>
-                            <p>Ако някой играе, може да се пуснем в мрежа.</p>
+                            <p>Пускам се в мрежа с играещите.</p>
                         </label>
                         <label>
                             <input type="radio" name="question5" value="c"/>
-                            <p>Изнервят ме, но е добра тренировка за “cubicles”.</p>
+                            <p>Изнервят ме, но тренирам за “cubicles”.</p>
                         </label>
                         <label>
                             <input type="radio" name="question5" value="d"/>

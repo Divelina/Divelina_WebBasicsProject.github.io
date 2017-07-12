@@ -1,11 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Kurale&subset=cyrillic');
 
 
+/*---------General styling-----------------*/
+
 *{
     margin: 0;
     padding: 0;
+}
+
+html, body{
+    background: #474747;
 }
 
 body{
@@ -19,8 +24,6 @@ header{
     position: relative;
 }
 
-/*---------General styling-----------------*/
-
 
 button, a{
     font-family: 'Kurale', sans-serif;
@@ -33,7 +36,7 @@ li{
 }
 
 li a{
-    font-size: 1.5em;
+    font-size: 1.7em;
     color:#ffc301;
     text-decoration: none;
     text-transform: uppercase;
@@ -143,6 +146,16 @@ form#form{
     max-width: 90vw;
 }
 
+
+div.questions{
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+
 section.question{
     position: relative;
     width: 400px;
@@ -151,10 +164,15 @@ section.question{
     box-sizing: border-box;
 }
 
-
-/*
-max-width: calc(50vw - 40px);
-*/
+.cover{
+    position: absolute;
+    top:-20px;
+    left:-20px;
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
 a.start{
     color: #ffc301;
@@ -168,19 +186,9 @@ a.start{
     text-decoration: none;
 }
 
-
-div.questions{
-    margin: 0 auto;
-    margin-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-}
-
 section.question p{
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 1.4em;
 }
 
 section.question > p{
@@ -202,14 +210,6 @@ label > p{
     max-width: 280px;
 }
 
-a.next-question{
-    display: inline-block;
-    float: right;
-    font-size: 30px;
-    color: #000;
-    text-decoration: none;
-}
-
 /*---------Styling the form action buttons-----------------*/
 
 div.form-buttons{
@@ -226,7 +226,6 @@ div.form-buttons{
     outline: none;
     font-size: 30px;
 }
-
 
 #reset{
     color: #910b3f;
@@ -258,7 +257,6 @@ div.form-buttons{
     text-decoration: none;
 }
 
-
 #sos2:hover{
     text-decoration: underline #ffc301;
 }
@@ -286,27 +284,19 @@ div.form-buttons{
 /*---------Styling the footer-----------------*/
 
 footer{
-    height: 200px;
     margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
     background: #581746;
     opacity: 0.5;
     color: #ff5634;
 }
 
 
-footer a{
-    font: 14px 'Roboto', sans-serif;
-    text-transform: lowercase;
-}
-
-footer a:hover{
-    cursor: pointer;
-}
-
 div#logos{
-    margin: 20px;
-    display: inline-block;
-    float: left;
+    margin: 10px;
     letter-spacing: 0.5px;
 }
 
@@ -319,15 +309,14 @@ p#mylogo{
     font-size: 20px;
 }
 
+
 p#mylogo > span{
     margin-left: 5px;
     font-size: 30px;
 }
 
 div#credits{
-    margin: 5px 20px 0 0 ;
-    display: inline-block;
-    float: right;
+    margin: 10px 20px 0 20px ;
     letter-spacing: 0.5px;
 }
 
@@ -340,12 +329,20 @@ div#credits ul{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    flex-basis: 200px;
 }
 
 div#credits li{
     line-height: 10px;
     text-align: left;
-    margin: 5px 0 0 20px;
+    margin-top: 5px;
 }
 
+footer a{
+    font: 14px 'Roboto', sans-serif;
+    text-transform: lowercase;
+}
 
+footer a:hover{
+    cursor: pointer;
+}

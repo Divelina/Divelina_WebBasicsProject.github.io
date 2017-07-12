@@ -1,11 +1,62 @@
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
+    div.questions{
+        max-width: calc(100vw - 80px);
+    }
+
+    section.question{
+        height: 420px;
+        width: 340px;
+        padding: 10px 10px 10px 20px;
+    }
+
+    .cover{
+        height: 420px;
+        width: 340px;
+        padding: 10px 10px 10px 20px;
+    }
+
+    section.question > p{
+        margin-top: 10px;
+    }
+
+    label > p{
+        max-width: 220px;
+    }
 }
 
 @media screen and (max-width: 768px){
 
-}
+    div.questions{
+        max-width: calc(100vw - 40px);
+    }
 
-@media screen and (max-width: 480px){
+    section.question{
+        width: 500px;
+        height: 350px;
+        padding: 10px 10px 10px 20px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .cover{
+        width: 500px;
+        height: 350px;
+        padding: 10px 10px 10px 20px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    section.question p{
+        font-size: 1.6em;
+    }
+
+    section.question > p{
+        margin: 0;
+    }
+
+    label > p{
+        max-width: 380px;
+    }
 
 }
