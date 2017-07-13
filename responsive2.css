@@ -1,0 +1,141 @@
+@media screen and (max-width: 1024px) {
+
+    /*---------Styling flexible question sections----------*/
+
+    div.questions{
+        max-width: calc(100vw - 120px);
+    }
+
+    section.question{
+        width: 50%;
+        padding: 10px 10px 10px 20px;
+    }
+
+    .cover{
+        width: calc(100% + 40px);
+        padding: 10px 10px 10px 20px;
+    }
+
+    section.question > p{
+        margin-top: 0;
+    }
+
+    label > p{
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 880px){
+
+    /*---------Styling flexible header and navigation----------*/
+
+
+    a#menu-icon{
+        display: block;
+    }
+
+    ul.nav{
+        display: none;
+        font-size: 0.8em;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+
+    nav:hover{
+        background: rgba(88, 23,70, 0.7);
+    }
+
+    nav:hover ul.nav{
+        display: block;
+    }
+
+    ul#more-tests{
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: rgba(88, 23,70, 0.7);
+    }
+
+    ul#more-tests li{
+        text-align: center;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    div.header-buttons{
+        width: 80%;
+        top: 70%;
+        left: 10%;
+    }
+
+    ul.header-buttons li:nth-of-type(2), ul.header-buttons li:nth-of-type(3){
+        display: none;
+    }
+
+    /*---------Styling flexible question sections----------*/
+
+    div.questions{
+        max-width: calc(100vw - 200px);
+    }
+
+    section.question{
+        width: 100%;
+        height: auto;
+        min-height: 260px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .cover{
+        width: calc(100% + 40px);
+        height: calc(100% + 40px);
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    section.question > p{
+        margin: 0;
+    }
+
+    div#cover1, div#cover2, div#cover3, div#cover4, div#cover5, div#cover6{
+        background-size: 35%;
+    }
+
+    a.start{
+        top: -60px;
+    }
+
+}
+
+@media screen and (max-width: 672px) {
+
+    /*---------Styling flexible question sections----------*/
+
+    div.questions{
+        max-width: calc(100vw - 60px);
+    }
+
+    label > p{
+        max-width: 80%;
+    }
+
+    div#cover1, div#cover2, div#cover3, div#cover4, div#cover5, div#cover6{
+        background-size: 40%;
+    }
+
+    /*---------Rearranging action buttons' order----------*/
+
+    #reset, #sos2{
+        order:5;
+    }
+
+    #answer{
+        order: 10;
+    }
+
+}

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Kurale&subset=cyrillic');
 
-
 /*---------General styling-----------------*/
 
 *{
@@ -44,6 +43,14 @@ li a{
 
 /*---------Styling the header-----------------*/
 /*---------Styling the navigation bar-----------------*/
+
+a#menu-icon{
+    font-size: 1.7em;
+    color:#fff;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: none;
+}
 
 ul.nav{
     display: flex;
