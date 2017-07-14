@@ -15,7 +15,7 @@
     <nav>
         <a href="#" id="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <ul class="nav">
-            <li class="nav"><a class="sos" href="#form-pay">SOS!</a></li>
+            <li class="nav"><a class="sos" href="#formWrapper">SOS!</a></li>
             <li class="nav" id="tests">
                 <a href="index.html">Тестове</a>
                 <ul id="more-tests">
@@ -31,7 +31,7 @@
         <ul class="header-buttons">
             <li>
                 <span class="sos-span">4D студентски хороскоп!</span>
-                <a id="sos" href="#form-pay">Поръчай!</a>
+                <a id="sos" href="#formWrapper">Поръчай!</a>
             </li>
         </ul>
     </div>
@@ -39,11 +39,11 @@
 </header>
 
 <main>
-    <div class="wrapper">
+    <div class="wrapper" id="formWrapper">
         <div class="order-text">
             <h3>4D студентски хороскоп</h3>
             <p>Уникалният хороскоп, комбинира най-големите достижения на традиционната и китайската астрология,
-            на келтската нумерология и тайните зулуски предсказания! Револиционният метод е разработен от
+            на келтската нумерология и тайните зулуски предсказания! Революционният метод е разработен от
             учени от института за &quot;Древни вярвания&quot; в сътрудничество с извънземни от новооткритата
             звездна система TRAPPIST-1.</p>
             <p>
@@ -51,25 +51,29 @@
             </p>
 
             <p class="order-now">
-                Бъдете от първите поръчали!
+                Бъдете от първите поръчали на промоционална цена от &dollar;100!
             </p>
         </div>
         <form method="" name="pay" id="form-pay">
             <div class="input-field">
                 <i class="fa fa-user"></i>
-                <input type="text" name="name" placeholder="име на картата"/>
+                <input type="text" name="name" placeholder="име на картата" pattern="[A-Za-z]+" required autofocus/>
             </div>
             <div class="input-field">
                 <i class="fa fa-credit-card"></i>
-                <input type="text" name="name" placeholder="номер на картата"/>
+                <input type="text" name="number" placeholder="номер на картата" pattern="\d+"/>
             </div>
             <div class="input-field">
                 <i class="fa fa-calendar"></i>
-                <input type="text" name="name" placeholder="Дата на изтичане"/>
+                <input type="date" name="date" placeholder="Дата на изтичане"/>
             </div>
             <div class="input-field">
                 <i class="fa fa-font"></i>
-                <input type="text" name="name" placeholder="Пета буква от името"/>
+                <input type="text" name="letter" placeholder="Пета буква от името"/>
+            </div>
+            <div class="input-field">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" placeholder="Електронна поща"/>
             </div>
             <input type="submit" name="submit" value="Поръчай"/>
         </form>

@@ -1,4 +1,6 @@
+/*---------General styling from index.css is used-----------------*/
 
+/*---------Styling the header-----------------*/
 
 header{
     height: 500px;
@@ -12,6 +14,8 @@ div.header-buttons{
     width: 50%;
     text-align: center;
 }
+
+/*---------Styling the form container----------*/
 
 .wrapper{
     width: 80%;
@@ -53,6 +57,9 @@ div.order-text p.order-now{
 div.order-text p:first-letter{
     margin-left: 20px;
 }
+
+/*---------Styling the form----------*/
+
 
 #form-pay{
     flex-basis: 40%;

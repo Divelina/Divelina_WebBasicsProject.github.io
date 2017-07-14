@@ -26,7 +26,6 @@ header{
 
 }
 
-
 button, a{
     font-family: 'Kurale', sans-serif;
 }
@@ -90,12 +89,6 @@ ul#more-tests li a{
     text-align: right;
 }
 
-
-/*
-ul#more-tests li:first-of-type a{
-    border-top: 2px solid #c8003a;
-}
-*/
 li.nav#tests:hover ul#more-tests{
     display: block;
     cursor: pointer;

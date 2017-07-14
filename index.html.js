@@ -5,6 +5,11 @@
 let answers = [];
 let areAllFilled = true;
 
+
+/**
+ * Function SubmitQuestions checks if the answers are filled and calls the other functions.
+ */
+
 function SubmitQuestions(){
 
     areAllFilled = true;
@@ -27,6 +32,9 @@ function SubmitQuestions(){
     }
 }
 
+/**
+ * Function SubmitAnswer gets the values of the selected radio buttons.
+ */
 
 function SubmitAnswer(name, index){
 
@@ -70,6 +78,10 @@ function SubmitAnswer(name, index){
         }
     }
 }
+
+/**
+ * Function SelectResults chooses a result depending on the answer.
+ */
 
 function SelectResult(arr){
 
@@ -165,6 +177,10 @@ function SelectResult(arr){
     return outputText;
 }
 
+/**
+ * Function ShowResult shows the result of the test in the html.
+ */
+
 function  ShowResult(text) {
 
     let x = document.getElementById("result");
@@ -178,6 +194,10 @@ function  ShowResult(text) {
     z.style.animation ="blink 1s linear infinite";
     window.location.hash = '#test-result';
 }
+
+/**
+ * Function ActivateRadioButtons activates again the radio buttons when the form is reset. And hides the answers
+ */
 
 function ActivateRadioButtons() {
 

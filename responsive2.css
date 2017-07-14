@@ -27,7 +27,7 @@
         max-width: 90%;
     }
 
-    /*---------Styling order form----------*/
+    /*---------Styling payment form----------*/
 
     .wrapper{
         width: 90%;
@@ -170,7 +170,7 @@
         order: 10;
     }
 
-    /*---------Styling order form----------*/
+    /*---------Styling payment form----------*/
 
     .wrapper{
         max-width: calc(100vw - 60px);
