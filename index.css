@@ -1,5 +1,7 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Kurale&subset=cyrillic');
+
 
 /*---------General styling-----------------*/
 
@@ -45,8 +47,12 @@ li a{
 /*---------Styling the navigation bar-----------------*/
 
 a#menu-icon{
-    font-size: 1.7em;
-    color:#fff;
+    text-decoration: none;
+}
+
+a#menu-icon i{
+    font-size: 3em;
+    color:#ffc301;
     letter-spacing: 1px;
     padding: 10px;
     display: none;
@@ -74,18 +80,21 @@ ul#more-tests{
     top: 40px;
     left: -10px;
     z-index: 25;
-}
-
-ul#more-tests li{
     border-bottom: 2px solid #c8003a;
-    padding: 5px 20px 5px 0;
-    text-align: right;
-}
-
-ul#more-tests li:first-of-type{
     border-top: 2px solid #c8003a;
 }
 
+ul#more-tests li a{
+    padding: 0 20px 5px 0;
+    text-align: right;
+}
+
+
+/*
+ul#more-tests li:first-of-type a{
+    border-top: 2px solid #c8003a;
+}
+*/
 li.nav#tests:hover ul#more-tests{
     display: block;
     cursor: pointer;
