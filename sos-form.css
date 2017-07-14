@@ -1,0 +1,100 @@
+
+
+header{
+    height: 500px;
+}
+
+div.header-buttons{
+    top: 20%;
+    left: 5%;
+    color: #fff;
+    font-size: 1.5em;
+    width: 50%;
+    text-align: center;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 80px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #581746;
+    opacity: 0.5;
+    border-radius: 30px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+div.order-text{
+   flex-basis: 40%;
+    height: 100%;
+}
+
+div.order-text h3{
+    font-size: 2em;
+    color: #ff5634;
+}
+
+div.order-text p{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+div.order-text p.order-now{
+    color: #ff5634;
+}
+
+div.order-text p:first-letter{
+    margin-left: 20px;
+}
+
+#form-pay{
+    flex-basis: 40%;
+    outline: none;
+    border: none;
+}
+
+.input-field{
+    border-bottom: 1px solid #ff5634;
+    position: relative;
+    padding-left: 2px;
+    display: block;
+}
+
+.input-field i{
+    position: absolute;
+    font-size: 30px;
+    color: #ff5634;
+    top: 5px;
+}
+
+.input-field input{
+    border: 0;
+    background: none;
+    width: 200px;
+    margin: 5px 20px 5px 50px;
+    padding: 10px 100px 10px 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+input[type="submit"]{
+    display: block;
+    background: #ff5634;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+}

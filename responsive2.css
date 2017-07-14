@@ -1,3 +1,6 @@
+
+/*--------------------------Screens up to 1024 pixels wide---------------------------*/
+
 @media screen and (max-width: 1024px) {
 
     /*---------Styling flexible question sections----------*/
@@ -23,7 +26,29 @@
     label > p{
         max-width: 90%;
     }
+
+    /*---------Styling order form----------*/
+
+    .wrapper{
+        width: 90%;
+    }
+
+    div.order-text, #form-pay{
+        flex-basis: 90%;
+    }
+
+    #form-pay{
+        order:1;
+    }
+
+    div.order-text{
+        order: 2;
+        margin-top: 20px;
+    }
+
 }
+
+/*--------------------------Screens up to 880 pixels wide---------------------------*/
 
 @media screen and (max-width: 880px){
 
@@ -116,6 +141,9 @@
 
 }
 
+
+/*--------------------------Screens up to 672 pixels wide---------------------------*/
+
 @media screen and (max-width: 672px) {
 
     /*---------Styling flexible question sections----------*/
@@ -142,4 +170,19 @@
         order: 10;
     }
 
+    /*---------Styling order form----------*/
+
+    .wrapper{
+        max-width: calc(100vw - 60px);
+        padding: 30px 10px;
+    }
+
+    .input-field input{
+        width: 90%;
+        margin: 5px 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff;
+    }
 }
