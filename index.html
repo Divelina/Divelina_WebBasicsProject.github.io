@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
             <li class="nav" id="tests">
                 <a href="">Тестове</a>
                 <ul id="more-tests">
-                    <li><a href="#form">Ще завършиш ли Софтуни?</a></li>
+                    <li><a href="#quiz">Ще завършиш ли Софтуни?</a></li>
                     <li><a href="">Ставаш ли за програмист?</a></li>
                     <li><a href="">Отборен играч ли си?</a></li>
                     <li><a href="">Готов ли си за интервюто?</a></li>
@@ -37,7 +37,7 @@
                     <a id="softuni" href="https://softuni.bg/" target="_blank">Кандидатствай!</a>
                 </li>
                 <li><span>Ще завърша ли СофтУни?</span>
-                    <a id="test" href="#form">Направи си тест!</a>
+                    <a id="test" href="#quiz">Направи си тест!</a>
                 </li>
             </ul>
         </div>
@@ -46,160 +46,160 @@
 
 <main>
     <div>
-            <form method="" name="test" id="form">
+            <form method="post" name="test" id="quiz">
                 <div class="questions">
                     <section class="question" id="q1">
 
-                        <a class="start" href="#form" onclick="ActivateRadioButtons()">Старт</a>
+                        <a class="start" href="#quiz" onclick="ActivateRadioButtons()">Старт</a>
 
-                        <p>Защо се записа в СофтУни?</p>
-                        <label>
+                        <h2>Защо се записа в СофтУни?</h2>
+                        <label class="blabel">
                             <input type="radio" name="question1" value="a"/>
-                            <p>Има переспективни мъже, нуждаещи се от женско внимание.</p>
+                            <span>Има переспективни мъже, нуждаещи се от женско внимание.</span>
                         </label>
-                        <label>
+                        <label class="blabel" >
                             <input type="radio" name="question1" value="b"/>
-                            <p>Наште искат да уча някъде.</p>
+                            <span>Наште искат да уча някъде.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question1" value="c"/>
-                            <p>За да си намеря работа.</p>
+                            <span>За да си намеря работа.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question1" value="d"/>
-                            <p>Владея материала, но искам да взема сертификати.</p>
+                            <span>Владея материала, но искам да взема сертификати.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question1" value="e"/>
-                            <p>Тайна.</p>
+                            <span>Тайна.</span>
                         </label>
                         <div class="cover" id="cover1"></div>
                     </section>
 
                     <section class="question" id="q2">
 
-                        <p>Как взе приемния изпит?</p>
-                        <label>
+                        <h2>Как взе приемния изпит?</h2>
+                        <label class="blabel">
                             <input type="radio" name="question2" value="a"/>
-                            <p>Колегата до мен се оказа отзивчив.</p>
+                            <span>Колегата до мен се оказа отзивчив.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question2" value="b"/>
-                            <p>Падна се това, което прегледах в метрото.</p>
+                            <span>Падна се това, което прегледах в метрото.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question2" value="c"/>
-                            <p>Доста се изпотих, но успях.</p>
+                            <span>Доста се изпотих, но успях.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question2" value="d"/>
-                            <p>Със затворени очи.</p>
+                            <span>Със затворени очи.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question2" value="e"/>
-                            <p>Хакнах &quot;Judge&quot;.</p>
+                            <span>Хакнах &quot;Judge&quot;.</span>
                         </label>
                         <div class="cover" id="cover2"></div>
                     </section>
 
 
                     <section class="question" id="q3">
-                        <p>Как идваш на лекции?</p>
-                        <label>
+                        <h2>Как идваш на лекции?</h2>
+                        <label class="blabel">
                             <input type="radio" name="question3" value="a"/>
-                            <p>С къса пола и деколте, заради билярда.</p>
+                            <span>С къса пола и деколте, заради билярда.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question3" value="b"/>
-                            <p>Все не успявам да стигна преди 3тия час.</p>
+                            <span>Все не успявам да стигна преди 3тия час.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question3" value="c"/>
-                            <p>Редовно.</p>
+                            <span>Редовно.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question3" value="d"/>
-                            <p>С 3 лаптопа и наваксам с други проекти.</p>
+                            <span>С 3 лаптопа и наваксам с други проекти.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question3" value="e"/>
-                            <p>Внимавам да не ме забележат.</p>
+                            <span>Внимавам да не ме забележат.</span>
                         </label>
                         <div class="cover" id="cover3"></div>
                     </section>
 
                     <section class="question" id="q4">
-                        <p>Какво правиш по време на лекциите?</p>
-                        <label>
+                        <h2>Какво правиш по време на лекциите?</h2>
+                        <label class="blabel">
                             <input type="radio" name="question4" value="a"/>
-                            <p>Запознавам се с колегите.</p>
+                            <span>Запознавам се с колегите.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question4" value="b"/>
-                            <p>Подремвам, че после имам raid в WoW.</p>
+                            <span>Подремвам, че после имам raid в WoW.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question4" value="c"/>
-                            <p>Работя и задавам въпроси.</p>
+                            <span>Работя и задавам въпроси.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question4" value="d"/>
-                            <p>Докато слушам, пиша по 3 проекта едновременно.</p>
+                            <span>Докато слушам, пиша по 3 проекта едновременно.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question4" value="e"/>
-                            <p>Хаквам компютрите на колегите.</p>
+                            <span>Хаквам компютрите на колегите.</span>
                         </label>
                         <div class="cover" id="cover4"></div>
                     </section>
 
                     <section class="question" id="q5">
-                        <p>Как приемаш шума, телефонните разговори и игрите
-                            в час?</p>
-                        <label>
+                        <h2>Как приемаш шума, телефонните разговори и игрите
+                            в час?</h2>
+                        <label class="blabel">
                             <input type="radio" name="question5" value="a"/>
-                            <p>Все ми е тая, аз съм в кафето.</p>
+                            <span>Все ми е тая, аз съм в кафето.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question5" value="b"/>
-                            <p>Пускам се в мрежа с играещите.</p>
+                            <span>Пускам се в мрежа с играещите.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question5" value="c"/>
-                            <p>Изнервят ме, но тренирам за “cubicles”.</p>
+                            <span>Изнервят ме, но тренирам за “cubicles”.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question5" value="d"/>
-                            <p>Нищо не ме разконцентрира.</p>
+                            <span>Нищо не ме разконцентрира.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question5" value="e"/>
-                            <p>Шумът е добро прикритие.</p>
+                            <span>Шумът е добро прикритие.</span>
                         </label>
                         <div class="cover" id="cover5"></div>
                     </section>
 
                     <section class="question" id="q6">
-                        <p>Пишеш ли си домашните?</p>
-                        <label>
+                        <h2>Пишеш ли си домашните?</h2>
+                        <label class="blabel">
                             <input type="radio" name="question6" value="a"/>
-                            <p>Пишат ми ги колегите, а и някои асистенти.</p>
+                            <span>Пишат ми ги колегите, а и някои асистенти.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question6" value="b"/>
-                            <p>Имаме ли домашни?!?</p>
+                            <span>Имаме ли домашни?!?</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question6" value="c"/>
-                            <p>Трудно ми е, но предавам почти всичко.</p>
+                            <span>Трудно ми е, но предавам почти всичко.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question6" value="d"/>
-                            <p>Да, отнемат ми по 5 минути.</p>
+                            <span>Да, отнемат ми по 5 минути.</span>
                         </label>
-                        <label>
+                        <label class="blabel">
                             <input type="radio" name="question6" value="e"/>
-                            <p>Хаквам &quot;Judge&quot;.</p>
+                            <span>Хаквам &quot;Judge&quot;.</span>
                         </label>
                         <div class="cover" id="cover6"></div>
                     </section>
@@ -225,9 +225,13 @@
 <footer>
     <div id="logos">
         <p id="mylogo">&copy;<span>div</span>elina</p>
-        <di id="valid">
-
-        </di>
+        <div id="valid">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                         src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                         alt="Valid CSS!" />
+                </a>
+        </div>
     </div>
 
     <div id="credits">

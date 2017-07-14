@@ -147,7 +147,7 @@ ul.header-buttons a#sos{
 /*---------Styling the main-----------------*/
 /*--------Styling the sections in the test--------------*/
 
-form#form{
+form#quiz{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -196,27 +196,27 @@ a.start{
     text-decoration: none;
 }
 
-section.question p{
+section.question h2, section.question span{
     margin-left: 10px;
     font-size: 1.4em;
 }
 
-section.question > p{
+section.question > h2{
     font-weight: bold;
 }
 
-label{
+.blabel{
     display: block;
     margin: 10px 0;
 }
 
-input[type="radio"], label > p{
+input[type="radio"], .blabel > span{
     display: inline-block;
     vertical-align: center;
     height: 18px;
 }
 
-label > p{
+.blabel > span{
     max-width: 280px;
 }
 
@@ -311,14 +311,14 @@ div#logos{
 }
 
 
-div#logos p{
+p#mylogo{
+    font-size: 20px;
     display: block;
 }
 
-p#mylogo{
-    font-size: 20px;
+div#valid{
+    margin: 10px 0 0 20px;
 }
-
 
 p#mylogo > span{
     margin-left: 5px;

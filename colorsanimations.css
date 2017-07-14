@@ -112,32 +112,32 @@ section#q6{
     }
 }
 
-#form:target #cover1{
+#quiz:target #cover1{
     animation: cover 1.5s linear;
     animation-fill-mode: forwards;
 }
 
-#form:target #cover2{
+#quiz:target #cover2{
     animation: cover 1.5s linear 1s;
     animation-fill-mode: forwards;
 }
 
-#form:target #cover3{
+#quiz:target #cover3{
     animation: cover 1.5s linear 2s;
     animation-fill-mode: forwards;
 }
 
-#form:target #cover4{
+#quiz:target #cover4{
     animation: cover 1.5s linear 3s;
     animation-fill-mode: forwards;
 }
 
-#form:target #cover5{
+#quiz:target #cover5{
     animation: cover 1.5s linear 4s;
     animation-fill-mode: forwards;
 }
 
-#form:target #cover6{
+#quiz:target #cover6{
     animation: cover 1s linear 5s;
     animation-fill-mode: forwards;
 }
@@ -165,7 +165,7 @@ section#q6{
     }
 }
 
-#form:target a.start{
+#quiz:target a.start{
     animation: hide 2.5s linear ;
     animation-fill-mode: forwards;
 }

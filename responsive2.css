@@ -19,11 +19,11 @@
         padding: 10px 10px 10px 20px;
     }
 
-    section.question > p{
+    section.question > h2{
         margin-top: 0;
     }
 
-    label > p{
+    .blabel > span{
         max-width: 90%;
     }
 
@@ -127,7 +127,7 @@
     }
 
 
-    section.question > p{
+    section.question > h2{
         margin: 0;
     }
 
@@ -152,7 +152,7 @@
         max-width: calc(100vw - 60px);
     }
 
-    label > p{
+    .blabel > span{
         max-width: 80%;
     }
 
